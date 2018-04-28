@@ -128,7 +128,7 @@ class _ElementKeywords(KeywordGroup):
         elif idlen == 18:
             pass
         else:
-            ic = choice(province.keys()) + self._gen_nums(4) + self._gen_birthday(int(maxAge),
+            ic = choice(list(province.keys())) + self._gen_nums(4) + self._gen_birthday(int(maxAge),
                  int(minAge)) + self._gen_nums(3)
             #print ic
         ic = ic[0:17]
